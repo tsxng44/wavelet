@@ -8,11 +8,11 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().contains("/add-message")) {
-            String[] parameters = url.getQuery.split("=");
+            String[] parameters = url.getQuery().split("=");
             String y;
-            if(s != null)
+            if(x != null)
                 {
-                    y = s + "\n" + parameters[1];
+                    y = x + "\n" + parameters[1];
                     return y;
                 }
         }
@@ -30,4 +30,5 @@ class StringServer {
 
         Server.start(port, new Handler());
     }
+}
 }
