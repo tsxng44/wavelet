@@ -15,6 +15,8 @@ class Handler implements URLHandler {
                     y = x + "\n" + parameters[1];
                     return y;
                 }
+            x = parameters[1];
+            return x;
         }
         return "404 Not Found!";
     }
